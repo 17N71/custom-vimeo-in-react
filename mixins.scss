@@ -1,0 +1,43 @@
+$prim-tc:#17272e;
+$wh:#ffffff;
+$blue :#00adef;
+$darkBlue :#0088cc;
+$tcolor:#496073;
+@mixin trs {
+  -webkit-transition: all 0.2s linear 0s;
+  -moz-transition: all 0.2s linear 0s;
+  -ms-transition: all 0.2s linear 0s;
+  -o-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+@mixin Button{
+  @include trs();
+  cursor: pointer;
+  line-height: 40px;
+  padding: 0 20px;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 4px;
+}
+@mixin ColoredButton($color,$textColor:red){
+  background-color: $color;
+  padding: 0 9px;
+  cursor: pointer;
+  color: $textColor;
+}
+@mixin ColoredButtonHover($color){
+  background-color: $color;
+}
+@mixin lightFontStyle{
+  font-size: 14px;
+  color: $tcolor;
+  text-align: justify;
+  font-family: "Arial",sans-serif;
+  font-weight: 100;
+}
