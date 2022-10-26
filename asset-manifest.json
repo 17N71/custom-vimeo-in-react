@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3b0f889e.css",
+    "main.js": "/static/js/main.d24ddbc3.js",
+    "static/media/vimeoSlider3.png": "/static/media/vimeoSlider3.2fa5faef785e64f2ae27.png",
+    "static/media/6.png": "/static/media/6.3052a0d4a679344defb6.png",
+    "static/media/vimeoSlider1.png": "/static/media/vimeoSlider1.fe5f4f07d1f353d36529.png",
+    "static/media/vimeoSlider4.png": "/static/media/vimeoSlider4.b6a75be16c34d5c5cfd2.png",
+    "static/media/18.png": "/static/media/18.8825f29c36d5b3dd71c4.png",
+    "static/media/vimeoSlider2.png": "/static/media/vimeoSlider2.904a65f6ddd6352fc116.png",
+    "static/media/11.png": "/static/media/11.2be13f627d10af5404d0.png",
+    "static/media/16.png": "/static/media/16.01df8ab4135e597f4710.png",
+    "static/media/9.png": "/static/media/9.61050e8a109b6e0e2667.png",
+    "static/media/19.png": "/static/media/19.7e9f8b3ef98c8b29623c.png",
+    "static/media/10.png": "/static/media/10.f5ef276d7bfe4e97749d.png",
+    "static/media/8.png": "/static/media/8.e7631d511d88afeb34e6.png",
+    "static/media/7.png": "/static/media/7.8f91f39668920a2a667a.png",
+    "static/media/13.png": "/static/media/13.af6b03a6166c832ac831.png",
+    "static/media/2.png": "/static/media/2.c7d2cb6a4217aa88f78b.png",
+    "static/media/17.png": "/static/media/17.20af6e69230902491617.png",
+    "static/media/5.png": "/static/media/5.a16753655692a3843860.png",
+    "static/media/15.png": "/static/media/15.2a02381507fe4452e10c.png",
+    "static/media/14.png": "/static/media/14.5fe7184e6c1ca84edd3a.png",
+    "static/media/3.png": "/static/media/3.07f790fe0689c1e563f4.png",
+    "static/media/12.png": "/static/media/12.6cf7feb9d8b7c2a2b14e.png",
+    "static/media/4.png": "/static/media/4.712a3434e88419688e60.png",
+    "index.html": "/index.html",
+    "main.3b0f889e.css.map": "/static/css/main.3b0f889e.css.map",
+    "main.d24ddbc3.js.map": "/static/js/main.d24ddbc3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b0f889e.css",
+    "static/js/main.d24ddbc3.js"
+  ]
+}
