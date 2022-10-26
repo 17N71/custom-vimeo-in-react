@@ -1,4 +1,4 @@
-export function ArrowRight({color,size}) {
+export function ArrowRight({color,size=20}) {
     return (
         <svg width={`${size}px`} height={`${size}px`} >
             <path
