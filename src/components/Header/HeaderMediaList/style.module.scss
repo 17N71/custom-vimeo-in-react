@@ -1,12 +1,13 @@
 @import "mixins";
 .header-list {
   width: 100%;
+  height: 100vh;
   padding: 5px 10px;
   top: 0;
-  z-index: 1;
   background-color: #ffffff;
   left: 0;
-  position: absolute;
+  position: fixed;
+  overflow-y: auto;
   display: none;
   list-style: none;
   &-sub_menu{
@@ -35,7 +36,6 @@
       opacity: 1;
       visibility: visible;
       margin: 10px 0;
-
     }
   }
   &.opened {
@@ -61,6 +61,7 @@
 .header-sub-list_links-item,
 .header-sub_list_links-item{
   font-weight: 100;
+  cursor: pointer;
   font-family: "Arial",sans-serif;
   font-size: 18px;
 
@@ -93,6 +94,7 @@
 }
 .sub-list_child{
   display: flex;
+  cursor: pointer;
   width: 100%;
   padding: 2px 5px;
   font-weight: 700;

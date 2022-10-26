@@ -25,11 +25,11 @@ const Header = () => {
     const [isFocused,setIsFocused] = useState(false)
     const [isMenuOpened,setIsMenuOpened] = useState(false)
     useEffect(()=>{
-        // if (isMenuOpened){
-        //     document.body.style.overflow = "hidden"
-        // }else {
-        //     document.body.style.overflow = "auto"
-        // }
+        if (isMenuOpened){
+            document.body.style.overflow = "hidden"
+        }else {
+            document.body.style.overflow = "auto"
+        }
 
     },[isMenuOpened])
     const serarching = ({target:{value}})=> {
@@ -61,7 +61,7 @@ const Header = () => {
                     {isMenuOpened?<XLg size={26} color={"#636f79"} />:<List size={26} color={"#636f79"} />}
                 </button>}
             </Media>
-            <nav className={h['header-menu']}>
+            <nav className={h['header-menu']} aria-label="header menu">
                 <Media query="(min-width: 1160px)">
                     {
                         matches => matches ?

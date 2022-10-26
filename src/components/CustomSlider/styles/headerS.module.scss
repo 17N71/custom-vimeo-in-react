@@ -1,0 +1,135 @@
+@import "mixins";
+.splide-slide{
+  width: 100%;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  background-color: #000;
+  cursor: pointer;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  &:hover{
+    .splide-image{
+      transform: translate(-50%,20%) scale(1.1);
+
+    }
+  }
+  &:hover{
+    .watch{
+      @include ColoredButtonHover(darken($blue,5px));
+    }
+  }
+  &::after{
+    left: -25%;
+    -webkit-transform: translateY(-12.5%);
+    -moz-transform: translateY(-12.5%);
+    -ms-transform: translateY(-12.5%);
+    -o-transform: translateY(-12.5%);
+    transform: translateY(-12.5%);
+  }
+
+  &::after,
+  &::before{
+    content: '';
+    width: 45vw;
+    height: 900px;
+    top: -50%;
+    z-index: 5;
+    position: absolute;
+    background-color: rgba(0,0,0,1);
+    box-shadow:0 0 15px rgba(0,0,0,.8),
+               0 0 25px rgba(0,0,0,.7),
+               0 0 35px rgba(0,0,0,.6),
+               0 0 45px rgba(0,0,0,.5),
+               0 0 65px rgba(0,0,0,.4),
+               0 0 75px rgba(0,0,0,.3),
+               0 0 95px rgba(0,0,0,.2),
+               0 0 85px rgba(0,0,0,.1),
+               0 0 105px rgba(0,0,0,.4);
+    border-radius: 45%;
+  }
+  &::before{
+    right: -25%;
+  }
+}
+.splide-image{
+  -webkit-transition: all 0.4s linear 0s;
+  -moz-transition: all 0.4s linear 0s;
+  -ms-transition: all 0.4s linear 0s;
+  -o-transition: all 0.4s linear 0s;
+  transition: all 0.4s linear 0s;
+  position: absolute;
+  background: #000;
+  left: 50%;
+  top: -50%;
+  -webkit-transform: translate(-50%,20%);
+  -moz-transform: translate(-50%,20%);
+  -ms-transform: translate(-50%),20%;
+  -o-transform: translate(-50%,20%);
+  transform: translate(-50%,20%);
+
+  &:hover{
+    .splide-image{
+      transform: translate(-50%,20%) scale(1.1);
+    }
+  }
+}
+.heading{
+  margin-left: 25vh;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  @media screen  and (max-width: 1160px){
+    margin:0 auto;
+    padding: 2px 35px;
+  }
+}
+.description{
+  margin-top: 15px;
+  font-family: "Arial",sans-serif;
+  font-weight: 100;
+}
+.splider-title{
+  font-size: 32px;
+  margin-top: 15px;
+  @media screen and (max-width: 666px){
+    font-size: 24px;
+    margin-top: 5px;
+  }
+}
+.splider-desc{
+  font-size: 22px;
+}
+.splider-title,
+.splider-desc, {
+  color: white;
+  z-index: 99;
+  margin-top: 5px;
+  position: relative;
+}
+.info{
+  font-size: 14px;
+  font-family: "Arial",sans-serif;
+  font-weight: 100;
+}
+.watch{
+  @include ColoredButton($blue,$wh);
+  @include trs();
+  max-width: 160px;
+  padding: 10px 5px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  &:hover{
+    @include ColoredButtonHover(darken($blue,5px));
+  }
+}
